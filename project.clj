@@ -72,8 +72,7 @@
                               :nrepl-port 7002
                               :nrepl-middleware ["cemerick.piggieback/wrap-cljs-repl"
                                                  "cider.nrepl/cider-middleware"
-                                                 "refactor-nrepl.middleware/wrap-refactor"
-                                                 ]
+                                                 "refactor-nrepl.middleware/wrap-refactor"]
                               :css-dirs ["resources/public/css"]
                               :ring-handler offcourse.handler/app}
 
@@ -107,5 +106,5 @@
                                    :builds {:app
                                              {:source-paths ["env/prod/cljs"]
                                               :compiler
-                                              {:optimizations :advanced
+                                              {:optimizations :whitespace
                                                :pretty-print false}}}}}})

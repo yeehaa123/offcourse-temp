@@ -100,5 +100,3 @@
 
     (logger/init         {:channel-in   logger-in})))
 
-(defn reload []
-  (actions/refresh))

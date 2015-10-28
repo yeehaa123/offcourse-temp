@@ -22,7 +22,7 @@
 (defn listen-for-actions [{input :channel-in}]
   (go-loop []
     (let [{type :type :as action} (<! input)]
-      ;; (println type)
+      (println type)
       ;; (store-logs action)
       (recur))))
 
